@@ -1,4 +1,4 @@
-package com.example.composition3
+package com.example.composition3.presentation
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import com.example.composition3.R
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
@@ -14,18 +15,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-        val button= findViewById<Button>(R.id.button)
-        val textView = findViewById<TextView>(R.id.textView)
-
-        button.setOnClickListener {
-            textView.text = getRandomNumber()
-            Log.d("MyLog111", getRandomNumber())
-        }
-    }
-
-    fun getRandomNumber(): String {
-        val sum = Random.nextInt(0, 11)
-        return sum.toString()
     }
 }

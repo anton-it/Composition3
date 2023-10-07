@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Composition 3</string>
+
+    <string name="iv_content_description">Welcome logo</string>
+    <string name="tv_text_title">Состав числа</string>
+    <string name="tv_text_game_description">Правила игры: перед вами будет три фигуры, две с низу и одна сверху, в двух из них будут числа. Необходимо, чтобы сумма из двух нижних фигур была равна числу в верхней фигуре, для этого нужно вставить недостающее число. \n\n Пример: в верхнем круге число 7, в одном из нижних знак вопроса, в другом число 4. Значит на месте вопросительного знака должно быть число 3, потому что 3 + 4 = 7.</string>
+    <string name="button_understand_text">Старт</string>
+    <string name="tv_select_level_text">Выберите уровень:</string>
+    <string name="button_level_text_test">Тестовый</string>
+    <string name="button_level_text_easy">Легкий</string>
+    <string name="button_level_text_normal">Средний</string>
+    <string name="button_level_text_hard">Тяжелый</string>
+    <string name="question_mark"><![CDATA[?]]></string>
+    <string name="tv_answers_progress_text">Правильных ответов %S (минимум %s)</string>
+    <string name="game_over">Game Over</string>
+    <string name="score_answers">Ваш счет: %s</string>
+    <string name="score_percentage">Процент правильных ответов: %s</string>
+    <string name="retry">Попробовать снова</string>
+    <string name="right_answers">Правильных ответов %s из %s необходимых</string>
+    <string name="required_percentage">Необходимый процент правильных ответов: %s</string>
+    <string name="required_score">Необходимое количество правильных ответов: %s</string>
+    <string name="progress_answers">Правильных ответов %s (минимум %s)</string>
 </resources>
