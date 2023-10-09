@@ -8,4 +8,8 @@ data class Questions (
     val sum: Int, //значение суммы в кружке
     val visibleNumber: Int, //левое число в квандарте
     val options: List<Int> //варианты ответов
-)
+) {
+//    сразу вычисляем правильный ответ
+    val rightAnswer: Int
+    get() = sum - visibleNumber
+}
