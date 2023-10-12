@@ -4,8 +4,8 @@ import com.example.composition3.domain.entity.GameSettings
 import com.example.composition3.domain.entity.Level
 import com.example.composition3.domain.entity.Questions
 import com.example.composition3.domain.repositoriy.GameRepository
-import java.lang.Integer.max
-import java.lang.Math.min
+import kotlin.math.max
+import kotlin.math.min
 import kotlin.random.Random
 
 object GameRepositoryImpl: GameRepository {
@@ -28,7 +28,7 @@ object GameRepositoryImpl: GameRepository {
         val from = max(rightAnswer - countOfOptions, MIN_ANSWER_VALUE)
         val to = min(maxSumValue, rightAnswer + countOfOptions)
         // далее нужно генирировать ответы пока размер коллекции options не будет равер числу countOfOptions
-        while (options.size > countOfOptions) {
+        while (options.size < countOfOptions) {
             options.add(Random.nextInt(from, to))
         }
         return  Questions(sum, visibleNumber, options.toList())
